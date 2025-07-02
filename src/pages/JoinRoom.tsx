@@ -123,11 +123,11 @@ export const JoinRoom = () => {
                                 <div className="mr-1">Made by</div>
                                 <div
                                     onClick={() => {
-                                        window.open("https://imshubh.site");
+                                        window.open("https://www.linkedin.com/in/akshat-sahu-265462325/");
                                     }}
                                     className="text-blue-400 hover:underline flex"
                                 >
-                                    Shubhashish <Redirect />
+                                    Akshat Sahu <Redirect />
                                 </div>
                             </div>
 

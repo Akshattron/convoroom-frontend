@@ -1,5 +1,5 @@
-import { Button } from "./ui/Button";
 import { Github } from "../icons/Github";
+import { Button } from "./ui/Button";
 import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
@@ -26,7 +26,7 @@ export const Navbar = () => {
                 <div
                     onClick={() =>
                         window.open(
-                            "https://github.com/Shubhashish-Chakraborty/convoroom"
+                            "https://github.com/Akshattron/convoroom-frontend"
                         )
                     }
                 >
@@ -36,7 +36,7 @@ export const Navbar = () => {
                 <div
                     onClick={() =>
                         window.open(
-                            "https://github.com/Shubhashish-Chakraborty/convoroom-api"
+                            "https://github.com/Akshattron/convoroom-wss"
                         )
                     }
                 >
