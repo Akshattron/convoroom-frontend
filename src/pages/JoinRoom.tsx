@@ -18,6 +18,7 @@ export const JoinRoom = () => {
     const [isRoomJoined, setIsRoomJoined] = useState(false);
     const [copyMessage, setCopyMessage] = useState("");
     const [copyMessageStatus, setCopyMessageStatus] = useState<"success" | "error" | null>(null);
+    const [username, setUsername] = useState("");
 
     // Connecting to WebSocket Server:
     useEffect(() => {
@@ -113,7 +114,7 @@ export const JoinRoom = () => {
     return (
         <div className="bg-custom-1 min-h-screen flex flex-col">
             {isRoomJoined ? (
-                <Room socket={socket as WebSocket} />
+                <Room socket={socket as WebSocket} username={username} />
             ) : (
                 <>
                     <Navbar />
@@ -140,7 +141,7 @@ export const JoinRoom = () => {
                             </h3>
 
                             <div className="w-full mb-4">
-                                <Input placeholder="Your Name" type="text" ref={nameRef} />
+                                <Input placeholder="Your Name" type="text" ref={nameRef} onChange={(e) => setUsername(e.target.value)} />
                             </div>
 
                             <div className="w-full mb-4">
