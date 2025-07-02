@@ -37,6 +37,7 @@ export const Room = ({ socket }: { socket: WebSocket }) => {
             //     { name: "You", message: textMessage },
             // ]);
 
+            //@ts-ignore
             messageInputRef.current.value = ""; // Clear the input after sending
         }
     };
